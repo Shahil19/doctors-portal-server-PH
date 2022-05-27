@@ -218,6 +218,10 @@ app.get('/', (req, res) => {
 
 })
 
+app.get("/heroku", (req, res) => {
+    res.send("heroku available")
+})
+
 app.listen(port, () => {
     console.log(`Doctors app listening on port ${port}`)
 })
